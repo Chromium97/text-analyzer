@@ -1,0 +1,109 @@
+body {
+  font: 10px sans-serif;
+}
+
+#myTextBox{
+	width: 1080px;
+	height: 300px;
+	float: center;
+}
+
+#container1{
+	float: left;
+}
+
+#right{
+	float: center;
+	width: 200px;
+	height: 700px;
+	padding-top: -150px
+}
+
+#top{
+	width: 1100px;
+	height: 350px;
+	border-bottom: solid;
+}
+
+#bottom{
+	width: 1100px;
+	height: 350px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: orange;
+}
+
+.bar:hover {
+  fill: orangered ;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.box {
+    width:100px;
+    display:box;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-orient:horizontal;
+     /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+    /* W3C */
+    display:box;
+    box-orient:horizontal;
+}
+
+.box .column1 {
+    -moz-box-flex:1.0; /* Firefox */
+    -webkit-box-flex:1.0; /* Safari and Chrome */
+    -ms-flex:1.0; /* Internet Explorer 10 */
+    box-flex:1.0;
+    background: yellow;
+}
+
+.box .column2 {
+    -moz-box-flex:1.0; /* Firefox */
+    -webkit-box-flex:1.0; /* Safari and Chrome */
+    -ms-flex:1.0; /* Internet Explorer 10 */
+    box-flex:1.0;
+    background: green;
+}

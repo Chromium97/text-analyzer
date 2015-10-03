@@ -1,0 +1,39 @@
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+		<script src="frequencyCalc.js"></script>
+		<script src="wordfrequencyanalyzer.js"></script>
+
+		<title>TAFC</title>
+
+	</head>
+	<body>
+		<center>
+		<h1>Text Alphabet Frequency Calculator </h1>
+		<p> This program calculates the frequency of each alphabet character entered in the textbox and visualizes it using Bar-Graph Plot</p>
+		</br>
+		<h2>Enter Some Text here</h2>
+		<form>
+		<textarea id="myTextBox" cols="60" rows="20" style="background-color:#FCF5D8;color:#AD8C08;border:5px double #AD8C08;">Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+
+		Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.
+
+		But, in a larger sense, we can not dedicate -- we can not consecrate -- we can not hallow -- this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us -- that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion -- that we here highly resolve that these dead shall not have died in vain -- that this nation, under God, shall have a new birth of freedom -- and that government of the people, by the people, for the people, shall not perish from the earth.</textarea><br />
+		</br>
+		<input type="submit" onclick="GetText()" value="Get alphabets"></input></br>
+		<input type="button" id="countWordsBtn" value="Count Words" /></br> 
+		</form>
+		<button onclick="myFunction()">Try it</button>
+		<h2> or </h2>
+		<h2> Enter a Text File </h2>
+		<input id="inputFileToRead" type="file" onchange="inputFileToRead_Changed(this);">(Path to the Text(*.txt) File)</input>
+		</center>
+		<div class="bottom"></div>
+	</body>
+</html>
